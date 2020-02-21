@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchForm from './components/SearchForm';
+import CivilizationList from './components/CivlizationList';
 import './App.css';
 import { createStore, applyMiddleware } from 'redux';
 import { civilizationsReducer as reducer } from './reducers/civilizationsReducer';
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <h1>Age of Empires Civilizations</h1>
         <SearchForm />
+        <CivilizationList />
       </div>
     </Provider>
   );
