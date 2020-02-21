@@ -5,7 +5,7 @@ const CivilizationList = props => {
     console.log('props', props);
     return (
         <>
-            {props.civilizations ? props.civilizations.map(civilization => <div>{civilization.name}</div>) : <div>Fetch civilizations to see data</div>}
+            {props.civilizations ? props.civilizations.map(civilization => <div key={civilization.id}>{civilization.name}</div>) : <div>Fetch civilizations to see data</div>}
         </>
     )
 }

@@ -9,7 +9,7 @@ const SearchForm = props => {
     };
     return (
         <>
-            <button onClick={handleGetData}>Get Civilizations</button>
+            {props.isFetchingData ===true ? <div>Fetching data from server</div> : <button onClick={handleGetData}>Get Civilizations</button>}
         </>
     );
 };
